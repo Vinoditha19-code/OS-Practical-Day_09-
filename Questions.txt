@@ -1,0 +1,199 @@
+//Questions
+
+Q1.
+write a code for small astrology based on your life path number for that get date of birth from user then calculate life path number(switchh case)
+
+calculation:-
+date=23
+	a=date%10   2
+	b=date/10   3
+	c=a+b       5
+
+if life path number:
+	1:Lucky
+	2:Carefully do your work
+	3:Storger
+	4:Happy
+	5:Can get help
+	6:Doubt
+	7:Sad
+	8:Like
+	9:Courage
+	
+	
+echo "Enter your date of birth: "
+read dob
+$a=$((dob%10))   
+$b=$((dob/10))   
+$c=$(($a+$b))   
+case $c in
+1)
+echo "Lucky"
+;;
+2)
+echo "Carefully do your work"
+;;
+3)
+echo "Storger"
+;;
+4)
+echo "Happy"
+;;
+5)
+echo "Can get help"
+;;
+6)
+echo "Doubt"
+;;
+7)
+echo "Sad"
+;;
+8)
+echo "Like"
+;;
+9)
+echo "Courage"
+;;
+
+Q2. 
+Give list of numbers then calculate the summation and multiplication using for loop
+
+1 2 3 4 5
+ summation = 15
+ multiplication = 120
+ 
+ for variable in list
+	do 
+	commands
+ done
+ 
+echo "How many numbers do you want to enter: "
+read n
+sum=0
+for 1 in range(5)
+	do
+	echo "Enter number :"
+	read num
+	$sum=$(($sum+$num))
+	done 
+	
+echo $sum
+
+
+Q3. 
+print the integers from 1 to 10 using while loop
+
+while [condition]
+ do 
+	commands
+done
+
+let i=1
+while [$i -le 10]
+do
+echo $i
+i=$(($i+1))
+done
+
+04. 
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+6 6 6 6 6 6
+
+
+for ((i=1; i<=6; i++))
+do
+  for ((j=1; j<=i; j++))
+  do
+    echo -n "$i "
+  done
+  echo
+done
+
+./pattern.sh
+
+
+05.
+1
+1 2 
+1 2 3
+1 2 3 4 
+1 2 3 4 5
+1 2 3 4 5 6
+
+
+for ((i=1; i<=6; i++))
+do
+  for ((j=1; j<=i; j++))
+  do
+    echo -n "$j "
+  done
+  echo
+done
+
+
+06. 
+	
+*
+**
+***
+****
+*****
+******
+
+for ((i=1; i<=6; i++))
+do
+  for ((j=1; j<=i; j++))
+  do
+    echo -n "*"
+  done
+  echo
+done
+
+07. 
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+rows=5
+for ((i=1; i<=6; i++))
+do
+  # Print leading spaces
+  for ((j=i; j<6; j++))
+  do
+    echo -n " "
+  done
+
+  # Print stars with spaces in between
+  for ((k=1; k<=i; k++))
+  do
+    echo -n "* "
+  done
+  echo
+done
+
+08. 
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+
+rows=6
+for ((i=6; i>=1; i--))
+do
+  for ((j=1; j<=i; j++))
+  do
+    echo -n "$j "
+  done
+  echo
+done
+
+
